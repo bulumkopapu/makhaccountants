@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="style.css">
     <title>Makh. Accountants</title>
 </head>
@@ -14,10 +14,10 @@
             </div>
             <ul class="navlinks">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Management</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#management">Management</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -27,13 +27,13 @@
             <article>
                 <h1>Makh.<br>Accountants</h1>
                 <p>The growth of your business is our priority.</p>
-                <button><a href="#">Get In Touch</a></button>
+                <a href="#contact"><button>Get In Touch</button></a>
             </article>
         </section>
         <section class="services">
             <div class="servicesbg"></div>
             <div class="serviceHeading">
-                <h2>Services</h2>
+                <h2 id="services">Services</h2>
             </div>
             <article>
                 <div class="serviceCardAccounting">
@@ -80,7 +80,7 @@
         <section class="about">
             <div class="aboutbg"></div>
             <article>
-                <h2>About
+                <h2 id="about">About
                 </h2>
                 <hr />
                 <p>Makh. Accountants is a 100% black owned firm based in Kempton, South Africa. The firm was founded in May 2018 and has a lot to offer clients and prospective clients in the fields of financial accounting, taxation, financial management and company secretarial services. As small firm we don’t only focus on the number crunching but also take the time out to understand what makes your business tick so we can help you grow. 
@@ -91,7 +91,7 @@
         <section class="management">
             <div class="managementbg"></div>
             <div class="managementHeading">
-                <h2>Management</h2>
+                <h2 id="management">Management</h2>
             </div>
             <div class="profile">
                 <img src="media/lebo.png" alt="">
@@ -121,11 +121,11 @@
         <section class="contact">
             <div class="contactbg"></div>
             <div class="contactHeading">
-                <h2>Contact Us</h2>
+                <h2 id="contact">Contact Us</h2>
             </div>
             <article>
                 <div class="form">
-                    <form action="" id="theForm">
+                    <form action="mailto:bulumkopapu@gmail.com" method="POST" enctype="multipart/form-data" id="theForm">
                         <input type="text" id="fname" name="fname" placeholder="Name"><br>
                         <input type="email" id="email" name="email" placeholder="Email"><br>
                         <textarea name="Message" form="theForm">Message</textarea>
@@ -148,12 +148,12 @@
                     <br>
                     <p>
                         <span>Email:</span>
-                        lebo@makhaccountants.co.za
+                        <a href = "mailto: lebo@makhaccountants.co.za">lebo@makhaccountants.co.za</a>
                     </p>
                     <div class="socialIcons">
-                        <a href="#"><img src="media/fb.png" alt=""></a>
-                        <a href="#"><img src="media/tw.png" alt=""></a>
-                        <a href="#"><img src="media/li.png" alt=""></a>
+                        <a href="https://www.facebook.com/Makh.Accountants" target="_blank"><img src="media/fb.png" alt=""></a>
+                        <a href="https://twitter.com/AccountantsMakh" target="_blank"><img src="media/tw.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/makh-accountants-349696165/" target="_blank"><img src="media/li.png" alt=""></a>
                     </div>
                 </div>
             </article>

@@ -52,6 +52,11 @@ a {
     color: #0D1228;
 }
 
+.navlinks a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* Hero */
 
 .heroimage {
@@ -84,18 +89,15 @@ h1 {
     border: none;
     border-radius: 2px;
     padding: 10px 50px;
-}
-
-.hero button a {
     color: white;
     font-family: "Nunito", sans-serif;
     font-size: 20px;
 }
 
+
 .hero button:hover {
     background: #1E2A5C;
     cursor: pointer;
-    color: #0D1228;
 }
 
 /* Services */
@@ -314,7 +316,7 @@ h1 {
 }
 
 
-/* C */
+/* Contact */
 
 .contactbg {
     background-color: white;
@@ -367,6 +369,10 @@ h1 {
     font-size: 20px;
     line-height: 32px;
     /* or 32px */
+}
+
+.address a:hover {
+    text-decoration: underline;
 }
 
 .address span {
