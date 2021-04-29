@@ -20,31 +20,33 @@ p, li {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
-/* Header */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* ----------------- HEADER ----------------- */
 
 header {
     height: 100px;  
 }
 
-.logo {
-    display: inline;
-}
-
-.logo img {
-    margin-top: 5px;
+header .flex {
+    justify-content: space-between;
 }
 
 ul {
     list-style-type: none;
-    float: right;
-    margin-top: 37px;
+    display: flex;
 }
 
 ul li {
-    display: inline;
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 a {
@@ -53,19 +55,18 @@ a {
 }
 
 .navlinks a:hover {
-    text-decoration: underline;
-    font-weight: bold;
+    border-bottom: 2px solid #0D1228;
+    
 }
 
-/* Hero */
+/* ----------------- HERO ----------------- */
 
-.heroimage {
+.hero {
     background-image: url(media/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 600px; 
-    position: absolute;
-    left:0;
-    right:0;  
 }
 
 .hero article {
@@ -94,29 +95,29 @@ h1 {
     font-size: 20px;
 }
 
-
 .hero button:hover {
     background: #1E2A5C;
     cursor: pointer;
 }
 
-/* Services */
+/* ----------------- SERVICES ----------------- */
 
-.servicesbg {
+.services {
     background-color: #0D1228;
     width: 100%;
-    height: 1000px; 
-    position: absolute;
-    left:0;
-    right:0;
-    top: 700px;
+    max-height: 2000px; 
+    position: relative;
+}
+
+.services .flex {
+    align-items: unset;
 }
 
 .serviceHeading {
-   position: relative;
-   top: 680px;
-   width: 186px;
-   margin: 0 auto;
+    padding: 60px 0;
+    width: 186px;
+    margin: 0 auto;
+   
 }
 
 .serviceHeading h2 {
@@ -126,60 +127,23 @@ h1 {
     font-size: 50px;
 }
 
-.services article {
-    position: relative;
-    top: 730px;
+.service-items {
+    display: grid;
+    /* height: 100%; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    min-height: 0; /*Fixes responsive height issue*/
+    gap: 30px;
+    padding-bottom: 90px;
+
 }
 
-.serviceCardAccounting {
+.service-items div {
     border: 2px solid #E5E5E5;  
     border-radius: 2px;
-    width: 570px;
-    height: 302px;
-    padding: 20px;
-    display: inline-block;
-    margin-right: 30px;
-    position: absolute;
-    top: 0;
-}
-
-.serviceCardTaxation {
-    border: 2px solid #E5E5E5;  
-    border-radius: 2px;
-    width: 570px;
-    height: 302px;
-    padding: 20px;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 600px;
-}
-
-.serviceCardCompany {
-    border: 2px solid #E5E5E5;  
-    border-radius: 2px;
-    width: 570px;
-    height: 302px;
-    padding: 20px;
-    display: inline-block;
-    margin-right: 30px;
-    margin-top: 30px;
-    position: absolute;
-    top: 300px;
-}
-
-.serviceCardFinancial {
-    border: 2px solid #E5E5E5;  
-    border-radius: 2px;
-    width: 570px;
-    height: 302px;
-    padding: 20px;
-    display: inline-block;
-    margin-right: 30px;
-    margin-top: 30px;
-    position: absolute;
-    top: 300px;
-    left: 600px;
+    max-width: 100%;
+    max-height: 100%;
+   
 }
 
 .services h3, .services p {
@@ -191,11 +155,13 @@ h1 {
     font-weight: normal;
     font-size: 30px;
     text-align: center;
+    padding: 15px;
 }
 
 .services p {
-    margin-top: 40px;
     margin-top: 30px;
+    padding-left: 15px;
+    padding-bottom: 15px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -207,23 +173,22 @@ h1 {
     margin: 24px auto;
 }
 
-/* About */
+ /* ----------------- ABOUT ----------------- */
 
-.aboutbg {
+.about {
     background-color: white;
     width: 100%;
-    height: 1000px; 
-    position: absolute;
-    left:0;
-    right:0;
-    top: 1700px;
+    height: 850px;
+    position: relative; 
+   
 }
 
-.about article {
-    position: relative;
-    top: 1650px;
-    width: 935px;
-    margin: 0 auto;
+.about .flex {
+    flex-direction: column;
+    max-height: 4050px;
+    justify-content: flex-start;
+    padding: 60px 0;
+    
 }
 
 .about h2 {
@@ -245,25 +210,31 @@ h1 {
     font-weight: normal;
     font-size: 20px;
     line-height: 255.5%;
-    /* or 51px */
     text-align: center;
 }
 
-/* Management */
+ /* ----------------- MANAGMENT ----------------- */
 
-.managementbg {
+.management {
     background-color:#0D1228;
     width: 100%;
-    height: 750px; 
-    position: absolute;
-    left:0;
-    right:0;
-    top: 2450px;
+    max-height: 2000px;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.management-items {
+    display: grid;
+    /* height: 100%; */
+    grid-template-columns: 1fr 2fr;
+    min-height: 0; /*Fixes responsive height issue*/
+    gap: 15px;
+    /* padding-bottom: 90px; */
 }
 
 .managementHeading {
-    position: relative;
-    top: 1985px;
+    padding-bottom: 60px;
     width: 292px;
     margin: 0 auto;
 }
@@ -275,16 +246,11 @@ h1 {
     font-size: 50px;
 }
 
-.profile {
-    position: relative;
-    top: 2000px;
-    width: 335px;
-    margin-right: 30px;
-    display: inline-block;
-    margin-top: 50px;
+.profile-pic {
+    padding: 0 30px;
 }
 
-.profile h3 {
+.profile-pic h3 {
     color: rgb(255, 255, 255);
     font-style: normal;
     font-weight: normal;
@@ -294,12 +260,8 @@ h1 {
 
 }
 
-.management article {
-    position: absolute;
-    top: 2650px;
-    width: 800px;
-    display: inline-block;
-    margin-top: 50px;
+.profile-pic img {
+    width: 100%;
 }
 
 .management p {
@@ -316,7 +278,7 @@ h1 {
 }
 
 
-/* Contact */
+/* ----------------- CONTACT ----------------- 
 
 .contactbg {
     background-color: white;
@@ -368,7 +330,6 @@ h1 {
     font-weight: normal;
     font-size: 20px;
     line-height: 32px;
-    /* or 32px */
 }
 
 .address a:hover {
@@ -423,16 +384,16 @@ input[type=text], select {
     font-family: "Nunito", sans-serif;
   }
 
-  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari
     color: white;
   }
-  ::-moz-placeholder { /* Firefox 19+ */
+  ::-moz-placeholder { /* Firefox 19+
     color: white;
   }
-  :-ms-input-placeholder { /* IE 10+ */
+  :-ms-input-placeholder { /* IE 10+ 
     color: white;
   }
-  :-moz-placeholder { /* Firefox 18- */
+  :-moz-placeholder { /* Firefox 18- 
     color: white;
   }
 
@@ -455,7 +416,7 @@ input[type=text], select {
     margin-right: 30px;
 }
 
-/* Footer */
+/* ----------------- FOOTER -----------------
 
 .footerbg {
     background-color: #0D1228;

@@ -2,13 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Makh. Accountants</title>
 </head>
 <body>
-    <header class="container">
-        <nav>
+    <header class="">
+        <nav class="container flex">
             <div class="logo">
                 <a href="index.html"><img src="media/logo.png" alt=""></a>
             </div>
@@ -21,103 +21,110 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
+    <main>
         <section class="hero">
-            <div class="heroimage"></div>
-            <article>
-                <h1>Makh.<br>Accountants</h1>
-                <p>The growth of your business is our priority.</p>
-                <a href="#contact"><button>Get In Touch</button></a>
-            </article>
+            <div class="container">
+                <article>
+                    <h1>Makh.<br>Accountants</h1>
+                    <p>The growth of your business is our priority.</p>
+                    <a href="#contact"><button>Get In Touch</button></a>
+                </article>
+            </div>    
         </section>
         <section class="services">
-            <div class="servicesbg"></div>
-            <div class="serviceHeading">
-                <h2 id="services">Services</h2>
+            <div class="container">
+                <div class="serviceHeading">
+                    <h2 id="services">Services</h2>
+                </div>
+                <div class="service-items">
+                    <div class="serviceCardAccounting">
+                        <h3>Accounting</h3>
+                        <hr/>
+                        <p>Monthly Bookkeeping<br>
+                            Preparation of Management Accounts<br>
+                            Preparation of Annual Financial Statements<br>
+                        </p>
+                    </div>
+                    <div class="serviceCardTaxation">
+                        <h3>Taxation</h3>
+                        <hr/>
+                        <p>
+                            Registration for Income Tax, VAT and PAYE<br>
+                            Income Tax calculations and submissions of returns<br>
+                            VAT calculations and submission of returns<br>
+                            PAYE calculations and submission of returns<br>
+                            Manage SARS audits, verifications, disputes and appeals<br>
+                            Implementation of Transfer Pricing policies (including the drafting of <br> both Master and Local files)
+                        </p>
+                    </div>
+                    <div class="serviceCardCompany">
+                        <h3>Company Secretarial</h3>
+                        <hr />
+                        <p>
+                            Company registrations<br>
+                            Submission of annual returns<br>
+                            Management of share registers and related share certificates<br>
+                            Amendment of company details<br>
+                            Assistance with the application of the Companies Act, 61 of 2008    
+                        </p>
+                    </div>
+                    <div class="serviceCardFinancial">
+                        <h3>Financial Management</h3>
+                        <hr />
+                        <p> Cash flow budgets<br>
+                            Operational budget forecasts<br>
+                            Cost-Volume-Profit analysis   
+                        </p>
+                    </div>
+                </div>
             </div>
-            <article>
-                <div class="serviceCardAccounting">
-                  <h3>Accounting</h3>
-                  <hr />
-                  <p>Monthly Bookkeeping<br>
-                    Preparation of Management Accounts<br>
-                    Preparation of Annual Financial Statements<br>
+        </section>
+         <section class="about">
+            <div class="container">
+                <div class="flex">
+                    <h2 id="about">About
+                    </h2>
+                    <hr />
+                    <p>Makh. Accountants is a 100% black owned firm based in Kempton, South Africa. The firm was founded in May 2018 and has a lot to offer clients and prospective clients in the fields of financial accounting, taxation, financial management and company secretarial services. As small firm we don’t only focus on the number crunching but also take the time out to understand what makes your business tick so we can help you grow. 
+                        Makh. Accountants. The growth of your business is our priority.
                     </p>
                 </div>
-                <div class="serviceCardTaxation">
-                    <h3>Taxation</h3>
-                    <hr />
-                    <p>
-                        Registration for Income Tax, VAT and PAYE<br>
-                        Income Tax calculations and submissions of returns<br>
-                        VAT calculations and submission of returns<br>
-                        PAYE calculations and submission of returns<br>
-                        Manage SARS audits, verifications, disputes and appeals<br>
-                        Implementation of Transfer Pricing policies (including the drafting of <br> both Master and Local files)
-                      </p>
-                  </div>
-                  <div class="serviceCardCompany">
-                    <h3>Company Secretarial</h3>
-                    <hr />
-                    <p>
-                        Company registrations<br>
-                        Submission of annual returns<br>
-                        Management of share registers and related share certificates<br>
-                        Amendment of company details<br>
-                        Assistance with the application of the Companies Act, 61 of 2008    
-                      </p>
-                  </div>
-                  <div class="serviceCardFinancial">
-                    <h3>Financial Management</h3>
-                    <hr />
-                    <p> Cash flow budgets<br>
-                        Operational budget forecasts<br>
-                        Cost-Volume-Profit analysis   
-                      </p>
-                  </div>
-            </article>
-        </section>
-        <section class="about">
-            <div class="aboutbg"></div>
-            <article>
-                <h2 id="about">About
-                </h2>
-                <hr />
-                <p>Makh. Accountants is a 100% black owned firm based in Kempton, South Africa. The firm was founded in May 2018 and has a lot to offer clients and prospective clients in the fields of financial accounting, taxation, financial management and company secretarial services. As small firm we don’t only focus on the number crunching but also take the time out to understand what makes your business tick so we can help you grow. 
-                    Makh. Accountants. The growth of your business is our priority.
-                </p>
-            </article>
+            </div>
         </section>
         <section class="management">
-            <div class="managementbg"></div>
-            <div class="managementHeading">
-                <h2 id="management">Management</h2>
+            <div class="container">
+                <div class="managementHeading">
+                    <h2>Management</h2>
+                </div>
+                <div class="management-items">
+                    <div class="profile-pic">
+                        <img src="media/lebo.png" alt="">
+                        <h3>Lebo Makhobosi</h3>
+                    </div>
+                    <div class="profile-text">
+                        <p>
+                            Makh. Accountants was founded by Lebogang “Makh” Makhobosi who is a proud member of the South African Institute for Business Accounts (SAIBA) and the South African Institute for Tax Professionals (SAIT). Lebogang is a well-balanced professional with expertise in the fields of taxation, financial accounting, financial management and company secretarial services. He is a young professional with a passion for making a difference in the lives of his clients. He lives and breathes the values of Makh. Accountants. A professional who embodies professionalism, integrity, and honesty.   
+                        </p>
+                        <br>
+                        <p>
+                            <span>Qualifications</span><br>
+                            Bachelor of Commerce in Accounting – UWC<br>
+                            Post Graduate Diploma in Applied Accounting Sciences – Unisa<br>
+                            Occupational Certificate: Tax Professional – Quality Council for Trades & Occupants<br>
+                            Master of Commerce in South African and International Tax – In progress at UJ
+                        </p>
+                        <br>
+                        <p>
+                            <span>Professional Designations </span><br>
+                            Business Accountant in Practice (SA) – South Institute for Business Accountants (SAIBA)<br>
+                            Tax Advisor (SA) – South African Institute for Tax Professionals (SAIT)<br>
+                            General Tax Practitioner – South African Revenue Services (SARS)
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="profile">
-                <img src="media/lebo.png" alt="">
-                <h3>Lebo Makhobosi</h3>
-            </div>
-            <article>
-                <p>
-                    Makh. Accountants was founded by Lebogang “Makh” Makhobosi who is a proud member of the South African Institute for Business Accounts (SAIBA) and the South African Institute for Tax Professionals (SAIT). Lebogang is a well-balanced professional with expertise in the fields of taxation, financial accounting, financial management and company secretarial services. He is a young professional with a passion for making a difference in the lives of his clients. He lives and breathes the values of Makh. Accountants. A professional who embodies professionalism, integrity, and honesty.   
-                </p>
-                <br>
-                <p>
-                    <span>Qualifications</span><br>
-                    Bachelor of Commerce in Accounting – UWC<br>
-                    Post Graduate Diploma in Applied Accounting Sciences – Unisa<br>
-                    Occupational Certificate: Tax Professional – Quality Council for Trades & Occupants<br>
-                    Master of Commerce in South African and International Tax – In progress at UJ
-                </p>
-                <br>
-                <p>
-                    <span>Professional Designations </span><br>
-                    Business Accountant in Practice (SA) – South Institute for Business Accountants (SAIBA)<br>
-                    Tax Advisor (SA) – South African Institute for Tax Professionals (SAIT)<br>
-                    General Tax Practitioner – South African Revenue Services (SARS)
-                </p>
-            </article>
         </section>
+        <!--
         <section class="contact">
             <div class="contactbg"></div>
             <div class="contactHeading">
@@ -166,6 +173,6 @@
             <p>Designed and Developed By <a href="">Bulumko Papu</a></p>
         </article>
         
-    </Footer>
+    </Footer> -->
 </body>
 </html>
