@@ -46,12 +46,12 @@ header .flex {
     justify-content: space-between;
 }
 
-ul {
+header ul {
     list-style-type: none;
     display: flex;
 }
 
-ul li {
+header ul li {
     margin-left: 30px;
 }
 
@@ -65,6 +65,7 @@ a {
     
 }
 
+
 @media only screen and (max-width: 720px) {
     header {
         height: 150px;
@@ -75,9 +76,25 @@ a {
         justify-content: space-around;
     }
 
-    ul{
-        margin-bottom: 30px;
+    header ul li {
+        margin-bottom: 15px;
     }
+
+}
+
+@media only screen and (max-width: 470px) {
+    header {
+        height: auto;
+    }
+    header ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header ul {
+        margin: 20px 0;
+    }
+
 }
 
 /* ----------------- HERO ----------------- */
@@ -410,6 +427,12 @@ input[type=text], select {
     font-size: 20px;
     font-family: "Nunito", sans-serif;
   }
+
+  @media (max-width: 470px) {
+    input[type=text], input[type=email], textarea {
+        width: 350px;
+    }
+}
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: white;
