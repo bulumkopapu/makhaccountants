@@ -65,36 +65,50 @@ a {
     
 }
 
+label {
+    font-size: 28px;
+    display: none;
+    color: #0D1228;
+    
+}
+
+#toggle {
+    display: none;
+}
+
+.mobileNav {
+    display: none;
+}
+.toggleMobileNav {
+    display: none;
+}
 
 @media only screen and (max-width: 720px) {
     header {
-        height: 150px;
+        height: auto;
         position: relative;
     }
-    header .flex {
-        flex-direction: column;
-        justify-content: space-around;
+    .navlinks {
+        display: none;
     }
-
-    header ul li {
-        margin-bottom: 15px;
+    label {
+        display: block; 
     }
-
-}
-
-@media only screen and (max-width: 470px) {
-    header {
-        height: auto;
-    }
-    header ul {
+    .mobileNav {
+        display: flex;
         flex-direction: column;
         text-align: center;
     }
-
-    header ul {
-        margin: 20px 0;
+    .mobileNav li {
+        margin: 5px 0;
+        padding: 5px 0;
     }
-
+    .mobileNav li a {
+        border-bottom: 1px solid #0D1228;
+    }
+    #toggle:checked + .toggleMobileNav {
+        display: block;
+    }
 }
 
 /* ----------------- HERO ----------------- */
@@ -430,7 +444,7 @@ input[type=text], select {
 
   @media (max-width: 470px) {
     input[type=text], input[type=email], textarea {
-        width: 350px;
+        width: 300px;
     }
 }
 

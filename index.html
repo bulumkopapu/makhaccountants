@@ -14,14 +14,29 @@
             <div class="logo">
                 <a href="index.html"><img src="media/logo.png" alt=""></a>
             </div>
-            <ul class="navlinks mobile">
+            <ul class="navlinks">
                 <li><a href="#">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#management">Management</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+                <label for="toggle">&#9776;</label>              
         </nav>
+<!-------------------- Mobile Navigation ------------------>
+        <div class="container">
+            <input type="checkbox" id="toggle"/>
+            <div class="toggleMobileNav">
+            <ul class="mobileNav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#management">Management</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>
+        </div>
+<!---------------------------------------------------------->
     </header>
     <main>
         <section class="hero">
@@ -86,8 +101,8 @@
                 <h2>About
                 </h2>
                 <hr />
-                <p>Makh. Accountants is a 100% black owned firm based in Kempton, South Africa. The firm was founded in May 2018 and has a lot to offer clients and prospective clients in the fields of financial accounting, taxation, financial management and company secretarial services. As small firm we don’t only focus on the number crunching but also take the time out to understand what makes your business tick so we can help you grow. 
-                        Makh. Accountants. The growth of your business is our priority.
+                <p>Makh. Accountants is a 100% black owned firm based in Kempton, South Africa. The firm was founded in May 2018 and has a lot to offer clients and prospective clients in the fields of financial accounting, taxation, financial management and company secretarial services. As a small firm we don’t only focus on the number crunching but also take the time out to understand what makes your business tick so we can help you grow. 
+                <br><br>Makh. Accountants. The growth of your business is our priority.
                 </p>
             </div>
         </section>
@@ -134,7 +149,7 @@
                         <form action="mailto:bulumkopapu@gmail.com" method="POST" enctype="multipart/form-data" id="theForm">
                             <input type="text" id="fname" name="fname" placeholder="Name"><br>
                             <input type="email" id="email" name="email" placeholder="Email"><br>
-                            <textarea name="Message" form="theForm">Message</textarea>
+                            <textarea name="Message" form="theForm" placeholder="Message"></textarea>
                             <br><br>
                             <input type="submit" value="Submit">
                         </form>
@@ -149,7 +164,7 @@
                         <br>
                         <p>
                             <span>Contact Number:</span><br> 
-                            +27 (0) 67 612 5913
+                            <a href="tel:+27 67 612 5913">+27 (0) 67 612 5913</a>
                         </p>
                         <br>
                         <p>
